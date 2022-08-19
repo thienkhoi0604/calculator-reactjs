@@ -1,0 +1,58 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "dis dis dis dis"
+    "AC C divide times"
+    "seven eight nine plus"
+    "four five six minus"
+    "one two three equal"
+    "zero zero dot equal";
+    margin-top: 100px;
+}
+
+.padButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #000;
+    padding: 20px;
+    background-color: chocolate;
+    color: aliceblue;
+    cursor: pointer;
+}
+
+.dis {
+    grid-area: dis;
+    background-color: #000;
+    color: aliceblue;
+    text-align: right;
+}
+
+.equal {
+    grid-area: equal;
+}
+
+.zero {
+    grid-area: zero;
+}
+
+.expression, .answer {
+    padding: 5px;
+    height: 50%;
+}
+
+.answer {
+    border-top: 1px solid brown;
+}
